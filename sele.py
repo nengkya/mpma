@@ -12,5 +12,5 @@ response = requests.get(page1)
 soup = BeautifulSoup(response.text, 'html.parser')
 
 #filter all the <a> tags from the parsed document
-for tag in soup.find_all('a'):
-   print(tag)
+for a in soup.find_all('a'):
+   print(type(a))
