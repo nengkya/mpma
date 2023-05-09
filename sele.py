@@ -13,4 +13,4 @@ soup = BeautifulSoup(response.text, 'html.parser')
 
 #filter all the <a> tags from the parsed document
 for a in soup.find_all('a'):
-   print(type(a))
+	print(a.get('href'))
